@@ -28,17 +28,12 @@ http://employee-directory-alb-516614506.eu-central-1.elb.amazonaws.com
 
 <img width="1024" height="1536" alt="00d02c28-f4ee-4472-9647-6ff2ef6afeff" src="https://github.com/user-attachments/assets/ea1dc9a9-ce47-4b3a-995a-b9a0a6d54aa1" /><img width="1536" height="1024" alt="7004f9a2-9c77-42c1-8f51-4742553d7c34" src="https://github.com/user-attachments/assets/f07b4def-8e8a-4e83-8206-1952c4074dfb" />
 
-Internet → lb-sg (port 80)
-lb-sg → ec2-sg (port 80, LB only)
-ec2-sg → rds-sg (port 3306, EC2 only)
-Your IP → bastion-sg (port 22)
-
 Each layer only accepts traffic from the layer directly above it.
 The database is completely unreachable from the internet.
 
 ## Features
 
-- View all employees in a dark-themed table
+- View all employees in a table
 - Add new employees via a form
 - Data persists in MySQL on RDS
 - App runs as a systemd service — survives SSH disconnects and reboots
