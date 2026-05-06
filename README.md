@@ -6,7 +6,8 @@ the database sits in a private subnet with no direct internet access.
 
 ## Architecture
 
-upload image here
+<img width="1024" height="1536" alt="6b69d078-b309-43fa-973f-9f37d70e0481" src="https://github.com/user-attachments/assets/ce70fff3-0412-456c-ba7b-c28ccd4b8f1c" /><img width="1774" height="887" alt="fa518d4c-d374-4bc3-b6b9-332c078f2872" src="https://github.com/user-attachments/assets/ecd2a47b-d122-4146-b2ef-cca97908b720" />
+
 
 ## Services Used
 
@@ -23,9 +24,9 @@ upload image here
 
 http://employee-directory-alb-516614506.eu-central-1.elb.amazonaws.com
 
-## Network Architecture
-
 ## Security Groups
+
+<img width="1024" height="1536" alt="00d02c28-f4ee-4472-9647-6ff2ef6afeff" src="https://github.com/user-attachments/assets/ea1dc9a9-ce47-4b3a-995a-b9a0a6d54aa1" /><img width="1536" height="1024" alt="7004f9a2-9c77-42c1-8f51-4742553d7c34" src="https://github.com/user-attachments/assets/f07b4def-8e8a-4e83-8206-1952c4074dfb" />
 
 Internet → lb-sg (port 80)
 lb-sg → ec2-sg (port 80, LB only)
